@@ -4,7 +4,7 @@ import '../../css/PropertyListingSummary.css';
 const PropertyListingSummary = () => {
 
     return (
-        <a href="/property/id" className="PropertyListingSummary my-3">
+        <a href="/property/1" className="PropertyListingSummary my-3">
             <div className="container">
                 <div className="row g-0 shadow-sm border rounded">
                     <div className="col-md-3">

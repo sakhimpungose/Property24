@@ -1,4 +1,4 @@
-
+import { NavLink } from 'react-router-dom';
 import logo from '../../images/property24-logo.svg';
 import '../../css/Navbar.css';
 
@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-white p-3 border-bottom shadow-sm">
             <div className="container">               
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="/">
                     <img src={ logo } alt="" height="36" />
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -107,11 +107,11 @@ const Navbar = () => {
                                 <li><a className="dropdown-item">Rent Your Property</a></li>
                             </ul>
                         </li>
-
-                        <li className="nav-item"><a className="nav-link" aria-current="page" href="#">Login</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#">Sign Up</a></li>
+                        <li className="nav-item"><NavLink className="nav-link" to='/signin'>Login</NavLink></li>
+                        <li className="nav-item"><NavLink className="nav-link" to='/signup'>SignUp</NavLink></li>
                         <li className="nav-item"><a className="nav-link" href="#">Notifications</a></li>
                     </ul>
+                
                 </div>
             </div>
         </nav>

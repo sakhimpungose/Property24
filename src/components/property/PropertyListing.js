@@ -1,7 +1,11 @@
 import '../../css/PropertyListing.css';
 import property from '../../images/property.jfif';
 
-const PropertyListing = () => {
+import ContactForm from './ContactForm';
+
+const PropertyListing = (props) => {
+
+    const id = props.match.params.id;
 
     return (
         <div className="PropertyListing">
@@ -21,7 +25,11 @@ const PropertyListing = () => {
                         </div>
                     </div>
                 </div>
-                <div class="row"></div>
+                <div className="row">
+                    <div className="col-md-4 offset-md-6">
+                        <ContactForm />
+                    </div>
+                </div>
             </div>
         </div>
     );
