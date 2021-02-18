@@ -1,0 +1,34 @@
+.PropertyListingSummary{
+    display: flex;
+    text-decoration: none;
+}
+
+.PropertyListingSummary:hover .PropertyListingSummary-price{
+    text-decoration: underline;
+}
+
+.PropertyListingSummary-img-container{}
+
+.PropertyListingSummary-img{
+    width: 100%;
+}
+
+.PropertyListingSummary-info-container{
+    color: #515b6d;
+}
+
+.PropertyListingSummary-price{
+    color: #0d63c9;
+    font-size: 26px;
+    font-weight: 600;
+}
+.PropertyListingSummary-title{
+    margin-bottom: 11px;
+}
+.PropertyListingSummary-location{
+    font-weight: 600;
+}
+
+.PropertyListingSummary-description{
+    width: 75%;
+}                          
